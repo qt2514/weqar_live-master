@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vendor_discpage_rellayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="25dp"
+    android:layout_below="@+id/basic_profile_img"
+    android:layout_marginRight="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="16sp"
+                android:hint="Start Date"
+                android:layout_marginTop="35dp"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:id="@+id/et_adddiscount_startdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/selector_bg_edit"
+                android:paddingBottom="7dp" />
+            <TextView
+                android:textSize="16sp"
+                android:hint="End Date"
+                android:layout_marginTop="35dp"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:id="@+id/et_adddiscount_enddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/selector_bg_edit"
+                android:paddingBottom="7dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/SP_vcomplete_offertype_s"
+                    android:layout_width="match_parent"
+                    android:layout_weight=".6"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spiner_border"
+                    app:hintText="Offer Type"/>
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:visibility="invisible"
+                    android:id="@+id/TIV_vcomplete_percentage_s"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:textSize="16sp"
+                        android:hint="Percentage"
+                        android:textColor="#000"
+                        android:id="@+id/et_vcomplete_percentage_s"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Title"
+                    android:id="@+id/et_vcomplete_disctitle_s"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_vcomplete_discdesc_s"
+                        android:textSize="16sp"
+                        android:hint="Description"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:lines="6"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:minLines="6"
+                        android:maxLines="6"
+                        android:isScrollContainer="true"
+                        android:focusable="true"
+
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text|textMultiLine|textCapSentences"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+            </ScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload File"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/IV_vcomplefileupload_s"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:src= "@drawable/professional_image_upload"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/B_vcomplete_completed_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Complete"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:background="@drawable/but_selected"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

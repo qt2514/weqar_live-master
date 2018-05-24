@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.weqar.weqar.Fragments.BotNav_EventsFragment">
+
+
+
+    <ImageView
+        android:id="@+id/IV_noitem_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:background="@drawable/event_noitems_images"/>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/events_user_listview"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/appbar_homescreen"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appbar_homescreen"
+        android:id="@+id/dashboard_fab_layout"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dashboard_button_u_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/event_float" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/dashboard_button_u_news"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/fab_margin"
+            app:srcCompat="@drawable/news_float" />
+    </RelativeLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="10dp"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        fab:menu_colorPressed="@color/colorPrimary"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/filter_home"
+
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="6dp"
+        fab:menu_labels_paddingRight="10dp"
+        fab:menu_labels_paddingBottom="6dp"
+        fab:menu_labels_paddingLeft="10dp"
+        fab:menu_labels_padding="10dp"
+        fab:menu_labels_textColor="#09331b"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="6dp"
+        fab:menu_labels_colorNormal="#ffffff"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="#d9000000"
+
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rss_feed"
+            fab:fab_size="mini"
+            fab:menu_shadowYOffset="3dp"
+            fab:menu_colorNormal="#13b167"
+            fab:menu_colorPressed="#1caf68"
+            fab:menu_colorRipple="#99FFFFFF"
+            fab:fab_label="News"
+            style="@style/MenuButtonsStyle" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_redeem"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="#13b167"
+            fab:menu_colorPressed="#1caf68"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="Event"
+            fab:menu_labels_colorNormal="#ffffff"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_loyalty"
+            fab:fab_size="mini"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="Discount" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_loyalty"
+            fab:fab_size="mini"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="All" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

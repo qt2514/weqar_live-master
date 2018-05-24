@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weqar.weqar.DashboardDetails">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/dashboard_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/dashboard_back_user"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+                <TextView
+                    android:id="@+id/dashboard_toolbar_name_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorHintss"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:id="@+id/homescreen_notification"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/home_toolbar_notification"
+
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:layout_below="@+id/dashboard_appbar"
+    android:id="@+id/dashboard_discount_scroll"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/discount_rv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        />
+
+</ScrollView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:layout_below="@+id/dashboard_appbar"
+
+    android:id="@+id/dashboard_event_scroll"
+    >
+    <include layout="@layout/content_dashboard_event_det" />
+
+</ScrollView>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+        android:layout_below="@+id/dashboard_appbar"
+
+        android:id="@+id/dashboard_news_scroll"
+    >
+    <include layout="@layout/content_dashboard_news_det" />
+
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+    <ScrollView
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/basic_profile_img"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Company Logo"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/vendor_professional_companylogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="25dp"
+                android:background="@drawable/professional_image_upload" />
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Company Name"
+                    android:id="@+id/vendor_professional_companyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Category"
+                    android:textColor="#000"
+                    android:layout_marginTop="30dp"
+
+                    android:id="@+id/vendor_professional_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_bg_edit"
+                    android:paddingBottom="5dp" />
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Business Contact"
+                    android:textColor="#000"
+                    android:id="@+id/vendor_professional_buscontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Business Email"
+                    android:textColor="#000"
+                    android:id="@+id/vendor_professional_busemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Website Link"
+                    android:textColor="#000"
+                    android:id="@+id/vendor_professional_websitelink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:textSize="16sp"
+                    android:hint="Location"
+                    android:textColorHint="@color/colorBlack"
+                    android:id="@+id/ET_pedit_location"
+                    android:drawableEnd="@drawable/ic_my_location_black_24dp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Back"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/but_unselected" />
+                <Button
+                    android:id="@+id/vendorprofessional_but_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    android:background="@drawable/but_selected"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

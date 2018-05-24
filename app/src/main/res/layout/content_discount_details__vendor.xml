@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/sdlkj"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:id="@+id/asthma_action_plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+>
+                <ImageView
+                    android:id="@+id/v_disc_det_image"
+                    android:layout_width="500dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/rounded_two"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/colorBlacks"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/linearLayout">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/v_disc_det_det_logo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/rounded"
+                        android:background="@drawable/rounded"
+                        app:civ_border_width="2dp"
+                        android:layout_gravity="center"
+                        app:civ_border_color="@color/colorPrimary"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/disc_desc_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="75% Discount in KFC"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/disc_desc_titlestartdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Percide January 7 2018 Dont miss it"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp"
+                            />  <TextView
+                            android:id="@+id/disc_desc_titlet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Percide January 7 2018 Dont miss it"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp"
+                            />
+                        <!--<RatingBar-->
+                            <!--android:id="@+id/disc_desc_rating"-->
+                            <!--style="?android:attr/ratingBarStyleIndicator"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:clickable="false"-->
+                            <!--android:focusable="false"-->
+                            <!--android:progressBackgroundTint="@color/coloryellows"-->
+                            <!--android:progressTint="@color/coloryellow"-->
+                            <!--android:layout_marginTop="3dp"-->
+                            <!--android:max="5"-->
+                            <!--android:rating="4"-->
+                            <!--android:scaleX=".5"-->
+                            <!--android:scaleY=".5"-->
+                            <!--android:transformPivotX="0dp"-->
+                            <!--android:transformPivotY="0dp" />-->
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="22dp"
+                    android:id="@+id/disc_dec_det"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into elecLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into elecalso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+
+
+            </ScrollView>
+
+
+
+
+        </LinearLayout>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:background="@drawable/but_selected"-->
+        <!--android:text="Edit"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="@color/colorWhite" />-->
+    </RelativeLayout>

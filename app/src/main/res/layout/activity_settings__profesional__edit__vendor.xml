@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.weqar.weqar.Fragments.BotNav_SettingsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_layout_profile"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:id="@+id/account_setting_professional_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Edit"
+            android:textSize="20sp"
+
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/homescreen_notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+
+            android:background="@drawable/home_toolbar_notification"
+
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relative_layout_profile"
+
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/IV_S_user_profile_edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="127dp"
+                    android:src="@drawable/profile_basic_profileedit" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/IV_S_user_profile_image"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/profile_basic_profimage" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                android:padding="15dp"
+                android:id="@+id/linearLayout2">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_email"
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:textSize="16sp"
+                        android:hint="Company Name"
+                        android:textColor="#000"
+                        android:id="@+id/ET_pedit_companyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:textSize="12sp"
+                    android:text="Category"
+                    android:textColor="#000"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+              />
+                <TextView
+                    android:textSize="16sp"
+                    android:hint="Category"
+                    android:textColor="#000"
+                    android:layout_marginTop="1dp"
+android:textColorHint="@color/colorBlack"
+                    android:id="@+id/ET_pedit_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_bg_edit"
+                    android:paddingBottom="5dp" />
+                <android.support.design.widget.TextInputLayout
+
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:textSize="16sp"
+                        android:hint="Business Contact"
+                        android:textColor="#000"
+                        android:id="@+id/ET_pedit_businesscontact"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/ET_pedit_bemail"
+                        android:textSize="16sp"
+                        android:hint="Business Email Id"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+                </android.support.design.widget.TextInputLayout>
+                 <!--<android.support.design.widget.TextInputLayout-->
+
+                    <!--android:textColorHint="@color/colorBlack"-->
+                    <!--android:theme="@style/TextLabel"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp">-->
+                    <!--<EditText-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:hint="Website Link"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:id="@+id/ET_pedit_websitelink"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:inputType="textEmailAddress"-->
+                        <!--android:background="@drawable/selector_bg_edit"-->
+                        <!--android:textCursorDrawable="@drawable/bg_input_cursor"-->
+                        <!--android:paddingBottom="2dp" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <android.support.design.widget.TextInputLayout
+
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:textSize="16sp"
+                        android:hint="Location"
+                        android:id="@+id/ET_pedit_location"
+                        android:drawableEnd="@drawable/ic_my_location_black_24dp"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <Button
+                    android:id="@+id/BT_pedit_update"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/but_selected"
+                    android:padding="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

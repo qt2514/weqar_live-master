@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amitshekhar.android:glide-bitmap-pool-0.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/glide-bitmap-pool-0.0.1.aar/c16a276f16be66a99e64b23a39ee92d4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/glide-bitmap-pool-0.0.1.aar/c16a276f16be66a99e64b23a39ee92d4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/glide-bitmap-pool/0.0.1/51675ade44dad8608210d0560ed02b21122a076b/glide-bitmap-pool-0.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

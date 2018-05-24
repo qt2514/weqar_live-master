@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weqar.weqar.Job_Edit_Vendor">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/veditjobs_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/iv_vaddjobs_back"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Job"
+            android:textColor="@color/colorHintss"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/homescreen_notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+
+            android:background="@drawable/home_toolbar_notification"
+
+            />
+    </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/veditjobs_appbar"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.4"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Job Title"
+
+                    android:id="@+id/et_veditjobs_title"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:textSize="16sp"
+                android:text="Job Type"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+
+                android:id="@+id/tv_veditjobs_jobtype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:paddingBottom="5dp" />
+            <TextView
+                android:textSize="16sp"
+                android:text="Job Field"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+
+                android:id="@+id/tv_veditjobs_jobfield"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:paddingBottom="5dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_veditjobs_description"
+                        android:textSize="16sp"
+                        android:hint="Description"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:lines="6"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:minLines="6"
+                        android:maxLines="6"
+                        android:isScrollContainer="true"
+                        android:focusable="true"
+
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text|textMultiLine|textCapSentences"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+            </ScrollView>
+
+
+            <TextView
+                android:textSize="16sp"
+                android:hint="Closing Date"
+                android:layout_marginTop="35dp"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:id="@+id/tv_veditjobs_closingdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:paddingBottom="7dp" />
+            <Button
+            android:id="@+id/but_veditjobs_update"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+                android:layout_marginBottom="50dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/but_selected"
+            android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

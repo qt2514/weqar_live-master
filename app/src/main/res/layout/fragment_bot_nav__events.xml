@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.weqar.weqar.Fragments.BotNav_EventsFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_homescreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:id="@+id/homescreen_notification"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/homescreen_filter"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/home_toolbar_notification"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/IV_noitem_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/appbar_homescreen"
+
+        android:background="@drawable/event_noitems_images"
+        />
+
+
+
+
+
+<include
+    android:layout_below="@+id/appbar_homescreen"
+    layout="@layout/bot_nav_events_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appbar_homescreen"
+        android:id="@+id/dashboard_fab_layout"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dashboard_button_u_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/event_float" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/dashboard_button_u_news"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/fab_margin"
+            app:srcCompat="@drawable/news_float" />
+    </RelativeLayout>
+</RelativeLayout>

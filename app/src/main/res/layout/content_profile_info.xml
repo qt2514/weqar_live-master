@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:descendantFocusability="beforeDescendants"
+
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.weqar.weqar.ProfileInfo"
+    tools:showIn="@layout/activity_profile_info">
+    <LinearLayout
+        android:id="@+id/profile_linear"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:weightSum="8"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/profile_view1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@color/colorAccent"/>
+        <ImageView
+            android:id="@+id/IV_personaL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_basic_two"/>
+        <View
+            android:id="@+id/profile_view2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@color/colorHintss"/>
+        <ImageView
+            android:id="@+id/IV_professional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_professional_one"/>
+        <View
+            android:id="@+id/profile_view3"
+
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@color/colorHintss"/>
+        <ImageView
+            android:id="@+id/IV_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_complete_one"/>
+        <View
+            android:id="@+id/profile_view4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@color/colorHintss"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollview_personal"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+
+        android:layout_below="@+id/profile_linear"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_profile_basicinfo" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollview_professional"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_below="@+id/profile_linear"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_profile_professionalinfo" />
+
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrollview_vendorprofessional"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_below="@+id/profile_linear"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_profile_vendorprofessional" />
+
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrollview_complete"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+
+        android:layout_below="@+id/profile_linear"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_profile_completeinfo" />
+
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scrollview_vendor_complete"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+
+        android:layout_below="@+id/profile_linear"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_vendor_completeinfo" />
+
+    </ScrollView>
+    <Button
+        android:id="@+id/complete_but"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Complete"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/but_selected"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

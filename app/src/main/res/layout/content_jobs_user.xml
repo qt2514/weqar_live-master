@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_name"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp"
+        android:layout_margin="2dp"
+        android:layout_gravity="center"
+        android:background="#000"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                android:weightSum="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/IV_logo_jobuser"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/rounded"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:layout_weight=".0"
+                    android:src="@drawable/rounded"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fag_jobs_type_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="start"
+                        android:text="Film Maker"
+                        android:textColor="@color/colorHint"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/fag_jobs_field_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="start"
+                        android:text="Producer"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/colorHint"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2"
+                        android:padding="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/fag_jobs_desc_user"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:maxLines="4"
+                            android:maxEms="30"
+                            android:paddingRight="10dp"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="start"
+                            android:text="Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting "
+                            android:textColor="@color/colorHintss"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/fag_jobs_deadline_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Deadline 27-03-2017"
+                android:layout_gravity="end"
+
+
+                android:drawableLeft="@drawable/ic_access_alarm_black_24dp"
+                android:gravity="end"/>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

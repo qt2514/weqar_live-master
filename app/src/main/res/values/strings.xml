@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Weqar</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="guest">GUEST</string>
+    <string name="new_account">NEW ACCOUNT</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="msg">please enable all permissions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discount">Discount</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_profile_info">ProfileInfo</string>
+    <string name="email_id">Email Id</string>
+    <string name="title_activity_discount_details">DiscountDetails</string>
+    <string name="title_activity_settings__profile">Settings_ProfileActivity</string>
+    <string name="title_activity_settings__account">Settings_AccountActivity</string>
+    <string name="title_activity_job_details">JobDetails</string>
+    <string name="title_activity_multi_spinner__vendor__category">MultiSpinner_Vendor_Category
+    </string>
+    <string name="title_activity_home_screen_vendor">HomeScreen_vendor</string>
+    <string name="title_activity_add_discount__vendor">AddDiscount_Vendor</string>
+    <string name="title_activity_discount_details__user">DiscountDetails_User</string>
+    <string name="title_activity_discount_details__vendor">DiscountDetails_Vendor</string>
+    <string name="title_activity_add_jobs__vendor">AddJobs_Vendor</string>
+    <string name="title_activity_multi_spinner__vendor__job_type">MultiSpinner_Vendor_JobType
+    </string>
+    <string name="title_activity_multi_spinner__vendor__job_field">MultiSpinner_Vendor_JobField
+    </string>
+    <string name="title_activity_job_details__vendor">JobDetails_Vendor</string>
+    <string name="title_activity_settings__help">Settings_HelpActivity</string>
+    <string name="title_activity_settings__profile__vendor">Settings_ProfileActivity_Vendor</string>
+    <string name="title_activity_discount__edit__vendor">Discount_Edit_Vendor</string>
+    <string name="title_activity_job__edit__vendor">Job_Edit_Vendor</string>
+    <string name="title_activity_add_events__vendor">AddEvents_Vendor</string>
+    <string name="title_activity_events__display">Events_Display</string>
+    <string name="title_activity_events__display__vendor">Events_Display_Vendor</string>
+    <string name="title_activity_event_details__vendor">EventDetails_Vendor</string>
+    <string name="title_activity_event_details__user">EventDetails_User</string>
+    <string name="title_activity_add_events__user">AddEvents_User</string>
+    <string name="title_activity_news__display">News_Display</string>
+    <string name="title_activity_news_details__user">NewsDetails_User</string>
+    <string name="title_activity_dashboard_details">DashboardDetails</string>
+    <string name="title_activity_events__edit__user">Events_Edit_User</string>
+    <string name="title_activity_dashboard_details__vendor">DashboardDetails_Vendor</string>
+    <string name="title_activity_news__display__vendor">News_Display_Vendor</string>
+    <string name="title_activity_news_details__vendor">NewsDetails_Vendor</string>
+    <string name="title_activity_events__edit__vendor">Events_Edit_Vendor</string>
+    <string name="title_activity_add_news__user">AddNews_User</string>
+    <string name="title_activity_news__edit__user">News_Edit_User</string>
+    <string name="title_activity_home_screen__guest">HomeScreen_Guest</string>
+    <string name="title_activity_discount_details__guest">DiscountDetails_Guest</string>
+    <string name="title_activity_job_details__guest">JobDetails_Guest</string>
+    <string name="title_activity_dashboard_details__guest">DashboardDetails_Guest</string>
+    <string name="title_activity_news_display__guest">NewsDisplay_Guest</string>
+    <string name="title_activity_news_details__guest">NewsDetails_Guest</string>
+    <string name="title_activity_events_display__guest">EventsDisplay_Guest</string>
+    <string name="title_activity_event_details__guest">EventDetails_Guest</string>
+    <string name="title_activity_settings__profile__edit__user">Settings_Profile_Edit_User</string>
+    <string name="title_activity_settings__profile__edit__vendor">Settings_Profile_Edit_Vendor
+    </string>
+    <string name="title_activity_settings__profesional__edit__vendor">
+        Settings_Profesional_Edit_Vendor
+    </string>
+    <string name="title_activity_news__edit__vendor">News_Edit_Vendor</string>
+    <string name="title_activity_add_news__vendor">AddNews_Vendor</string>
+    <string name="title_activity_select_location">Map</string>
+    <string name="title_activity_select_locations">Map</string>
+</resources>

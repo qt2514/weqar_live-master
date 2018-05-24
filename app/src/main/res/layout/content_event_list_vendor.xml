@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/dfs"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="2dp"
+            android:layout_margin="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_gravity="center"
+            android:layout_height="200dp" >
+            <RelativeLayout
+                android:id="@+id/relative_discountone"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+                <ImageView
+                    android:id="@+id/events_vendor_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_two"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/event_event_layout"
+                    android:background="@color/colorBlacks">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/events_vendor_title"
+                        android:maxLength="20"
+                        android:text="75% Discount in KFC"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/events_vendor_desc"
+                        android:text="Percide January 7 2018 Dont miss  January 7 2018 Dont miss  January 7 2018 Dont miss  January 7 2018 Dont miss it"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="11sp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/event_startdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                        <TextView
+                            android:id="@+id/event_enddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorWhite"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:layout_above="@+id/textViewu"
+                        android:layout_marginBottom="29dp"
+                        android:layout_marginStart="29dp"
+                        android:layout_toEndOf="@+id/IV_disc_image"
+                        android:background="@drawable/but_selected"
+                        android:visibility="invisible"
+                        android:text="Unfollow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/button"
+                        android:layout_below="@+id/TV_disc_percentage"
+                        android:visibility="invisible"
+
+                        android:layout_marginTop="25dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:src="@drawable/ic_location_on_black_24dp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

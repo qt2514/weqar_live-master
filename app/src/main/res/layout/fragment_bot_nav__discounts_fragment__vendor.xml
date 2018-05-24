@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.weqar.weqar.Fragments.BotNav_DiscountsFragment_Vendor">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_homescreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="65dp"
+                    android:layout_toStartOf="@+id/homescreen_adddiscount"
+                    android:text="Discount"
+                    android:textColor="@color/colorHint"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/homescreen_adddiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_toStartOf="@+id/homescreen_notification"
+                    android:background="@drawable/ic_add_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/homescreen_notification"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:background="@drawable/home_toolbar_notification" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:layout_below="@+id/appbar_homescreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/disc_vendor_gv"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:divider="@android:color/transparent"
+
+        android:layout_marginBottom="70dp"
+        />
+    <ImageView
+        android:id="@+id/IV_noitem_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+       android:layout_centerInParent="true"
+        android:background="@drawable/discount_noitems_image"
+   />
+</RelativeLayout>

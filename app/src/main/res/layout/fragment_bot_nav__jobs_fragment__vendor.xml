@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.weqar.weqar.Fragments.BotNav_JobsFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_homescreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jobs"
+                    android:layout_centerInParent="true"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorHint"/>
+                <ImageView
+                    android:id="@+id/homescreen_addjobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_toStartOf="@+id/homescreen_notification"
+                    android:background="@drawable/ic_add_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/homescreen_notification"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:background="@drawable/home_toolbar_notification" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/weqar_vendor_addjobs"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/appbar_homescreen"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/IV_noitem_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RV_jobs_user"
+        android:visibility="invisible"
+        android:background="@drawable/job_noitems_image"
+        />
+</RelativeLayout>

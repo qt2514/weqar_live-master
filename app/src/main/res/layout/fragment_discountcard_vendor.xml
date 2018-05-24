@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:id="@+id/dfs"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="2dp"
+          android:layout_margin="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_gravity="center"
+            android:layout_height="170dp" >
+            <RelativeLayout
+                android:id="@+id/relative_discountone"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="170dp">
+        <ImageView
+            android:id="@+id/roundimg_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+
+            android:background="@drawable/rounded_two"
+
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+        <ImageView
+            android:id="@+id/IV_vdisc_image_vendor"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vgv"
+            android:clickable="false"
+            android:layout_alignParentStart="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/RIV_vendor_logo_vendor"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/TV_disc_percentage_vendor"
+            android:layout_alignTop="@+id/IV_vdisc_image_vendor"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:clickable="false"
+            android:background="@drawable/rounded"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/rounded"
+             />
+
+        <TextView
+            android:id="@+id/TV_disc_percentage_vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RIV_vendor_logo_vendor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:text="75% Discount in KFC"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+                <TextView
+                    android:id="@+id/text_vendor_discount_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TV_disc_percentage_vendor"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Percide January 7 2018 Dont miss it"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11sp"
+                    android:maxLength="27"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+        <TextView
+            android:id="@+id/text_vendor_discount_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_vendor_discount_startdate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Percide January 7 2018 Dont miss it"
+            android:textColor="@color/colorWhite"
+            android:textSize="11sp"
+android:maxLength="27"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <!--<RatingBar-->
+            <!--android:id="@+id/RB_vendr_rating_vendor"-->
+            <!--style="?android:attr/ratingBarStyleIndicator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/text_vendor_discount_desc"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="3dp"-->
+
+            <!--android:max="5"-->
+            <!--android:progressBackgroundTint="@color/coloryellows"-->
+            <!--android:progressTint="@color/coloryellow"-->
+            <!--android:rating="5"-->
+            <!--android:scaleX=".5"-->
+            <!--android:scaleY=".5"-->
+            <!--android:transformPivotX="0dp"-->
+            <!--android:transformPivotY="0dp"-->
+            <!--android:clickable="false"-->
+            <!--android:focusable="false"-->
+            <!--android:focusableInTouchMode="false"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+
+                android:layout_marginTop="25dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+        </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

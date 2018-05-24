@@ -1,0 +1,22 @@
+
+<tabs>
+    <tab
+        id="@+id/botnav_event_guest"
+        icon="@drawable/my_tab_eventicon"
+        title="Home"/>
+    <tab
+        id="@+id/botnav_discount_guest"
+        icon="@drawable/my_tab_discounticon"
+
+        title="Discount" />
+    <tab
+        id="@+id/botnav_jobs_guest"
+        icon="@drawable/my_tab_jobicon"
+
+        title="Job" />
+    <tab
+        id="@+id/botnav_settings_guest"
+        icon="@drawable/mytab_settingicon"
+        title="Settings"
+        />
+</tabs>

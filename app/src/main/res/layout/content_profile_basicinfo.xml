@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_below="@+id/mid_relat"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/basic_profile_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/profile_linear"
+        android:src="@drawable/profile_basic_profimage" />
+
+    <ImageView
+        android:id="@+id/profile_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/basic_profile_img"
+        android:layout_alignTop="@+id/basic_profile_img"
+        android:src="@drawable/profile_basic_profileedit" />
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/basic_profile_img"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp"
+
+            android:id="@+id/linearLayout2">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_email"
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="First Name"
+                    android:textColor="#000"
+                    android:id="@+id/et_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Middle Name"
+                    android:textColor="#000"
+                    android:id="@+id/et_mname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:textSize="16sp"
+                    android:hint="Last Name"
+                    android:textColor="#000"
+                    android:id="@+id/et_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:textColorHint="@color/colorBlack"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <EditText
+                    android:id="@+id/et_emailid"
+                    android:textSize="16sp"
+                    android:hint="Email Id"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+
+
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="4"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/basic_spiner_countrycode"
+                    android:spinnerMode="dialog"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/spiner_border"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:hintText="+965"/>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <EditText
+                        android:id="@+id/et_mobile"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/baisc_gender_sel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spiner_border"
+                app:hintText="Select Your Gender"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+                    android:textColorHint="@color/colorBlack"
+                    android:theme="@style/TextLabel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:textSize="16sp"
+                        android:hint="Address"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:lines="4"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:minLines="4"
+                        android:maxLines="4"
+                        android:isScrollContainer="true"
+                        android:focusable="true"
+
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text|textMultiLine|textCapSentences"
+                        android:background="@drawable/selector_bg_edit"
+                        android:textCursorDrawable="@drawable/bg_input_cursor"
+                        android:paddingBottom="2dp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+            </ScrollView>
+
+            <android.support.design.widget.TextInputLayout
+
+            android:textColorHint="@color/colorBlack"
+            android:theme="@style/TextLabel"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:textSize="16sp"
+                android:hint="Country"
+                android:textColor="#000"
+                android:id="@+id/et_selectcountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/selector_bg_edit"
+                android:textCursorDrawable="@drawable/bg_input_cursor"
+                android:paddingBottom="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/saveandcontinue_personal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/but_selected"
+                android:padding="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="Save and Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
